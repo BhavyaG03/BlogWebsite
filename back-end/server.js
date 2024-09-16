@@ -15,7 +15,7 @@ connectDB()
 app.use(cookieParser())
 app.use('/uploads',express.static(__dirname+'/uploads'))
 app.use(express.json())
-app.use(cors({origin:'http://localhost:5173',
+app.use(cors({origin:'https://blog-website-6lxv.onrender.com',
 credentials:true}))
 const PORT = process.env.PORT || 8000;
 app.get('/', (req, res) => {
